@@ -1,10 +1,13 @@
 body {
-  background-color: #94d7f2;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+  background-color: white;
+
   overflow: hidden;
+  /* height: 100vh; */
+  /* margin: 0;
+  padding: 0;
+  overflow: hidden; */
+}
+
+.list_cs {
+  list-style-type: none;
 }
