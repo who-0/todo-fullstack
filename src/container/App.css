@@ -11,3 +11,20 @@ body {
 .list_cs {
   list-style-type: none;
 }
+
+.input_cs {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid blue;
+  background: transparent;
+}
+.input-button_cs {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: rgb(70, 224, 152);
+  width: 10%;
+  height: 10%;
+  line-height: 37px;
+  border-radius: 10%;
+}
