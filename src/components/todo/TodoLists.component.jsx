@@ -1,6 +1,6 @@
 const TodoLists = ({ lists }) => {
   return (
-    <ul className="m-0 p-1">
+    <ul className="m-0 p-1 ">
       {lists.map((list) => (
         <li
           className="list_cs bg-white my-1 h-50 rounded-1 p-1 fs-5"
