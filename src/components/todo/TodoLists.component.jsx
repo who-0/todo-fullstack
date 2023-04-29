@@ -3,7 +3,7 @@ const TodoLists = ({ lists }) => {
     <ul className="m-0 p-1 ">
       {lists.map((list) => (
         <li
-          className="list_cs bg-white my-1 h-50 rounded-1 p-1 fs-5"
+          className="list_cs bg-white my-1 h-50 rounded-1 p-1 ps-3 fs-5"
           key={list.id}
         >
           {list.list}

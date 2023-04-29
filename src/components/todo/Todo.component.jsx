@@ -8,7 +8,8 @@ const Todo = () => {
   const [listId, setListId] = useState(0);
   const formHandler = (e) => {
     e.preventDefault();
-    const newList = [...lists, { id: setListId(listId + 1), list: inputValue }];
+    setListId(listId + 1);
+    const newList = [...lists, { id: listId, list: inputValue }];
     setInputValue("");
     setLists(newList);
   };
