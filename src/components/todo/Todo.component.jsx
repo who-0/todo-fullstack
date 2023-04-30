@@ -16,7 +16,7 @@ const Todo = () => {
   return (
     <div className="row justify-content-center mt-5 h-75 mx-sm-2 m-0 ">
       <div className="col-lg-4 col-md-8 col-sm  bg-light text-start rounded-3 h-100">
-        <div className="h-75 bg-primary w-100 my-4 rounded-2 overflow-auto">
+        <div className="h-75 bg-primary w-100 my-4 rounded-2 overflow-y-auto">
           <TodoLists lists={lists} />
         </div>
         <TodoInput
