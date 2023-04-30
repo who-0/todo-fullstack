@@ -1,12 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "./Custom.css";
-import Login from "../components/login/Login.component";
+import Signup from "../components/signup/Signup.component";
 
 // import Home from "./Home.container";
 // import Login from "../components/login/Login.component";
 
 function App() {
-  return <Login />;
+  return <Signup />;
 }
 export default App;
