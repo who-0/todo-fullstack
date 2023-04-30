@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="container bg-primary vh-100">
       <div className="row justify-content-center align-items-center h-100">
-        <div className="col">
+        <div className="col-12 col-lg col-md ">
           <div className="text-center">
             <img
               src="/img/login.svg"
@@ -19,24 +19,36 @@ function App() {
             />
           </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-lg col-md">
           <div className="message text-center">error</div>
-          <form className="d-flex justify-content-center align-items-center flex-column my-3">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Enter Email"
-            />
-            <input
-              type="password"
-              name="pwd"
-              id="pwd"
-              placeholder="Enter Password"
-              className="my-3"
-            />
-            <button type="submit">Login</button>
+          <form className="text-center my-4 px-lg-5 px-0">
+            <div className="form-floating">
+              <input
+                type="email"
+                name="email"
+                id="floatingInput"
+                className="form-control"
+                placeholder="name@example.com"
+              />
+              <label htmlFor="floatingInput">Enter Email</label>
+            </div>
+            <div className="form-floating">
+              <input
+                type="password"
+                name="pwd"
+                id="floatingPassword"
+                className="form-control my-3"
+                placeholder="Password"
+              />
+              <label htmlFor="floatingPassword">Enter Password</label>
+            </div>
+            <button type="submit" className="btn btn-success w-50 fs-4 l">
+              Login
+            </button>
           </form>
+          <div className="text-muted text-center">
+            You are not have account!
+          </div>
         </div>
       </div>
     </div>
