@@ -1,3 +1,4 @@
+import "./Todo.css";
 const TodoInput = ({ inputValue, setInputValue, formHandler }) => {
   return (
     <div className="text-center">

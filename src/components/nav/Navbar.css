@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Alfa+Slab+One&display=swap");
+
+.logo_cs {
+  font-family: "Dancing Script", cursive;
+  color: #94d7f2;
+}
+
+.header-input_cs {
+  border: none;
+  outline: none;
+  font-family: "Alfa Slab One", cursive;
+}

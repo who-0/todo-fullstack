@@ -1,0 +1,26 @@
+.input_cs {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+  transition: all 0.2s;
+}
+.input_cs:focus {
+  border-color: #94d7f2;
+}
+
+.input-button_cs {
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #94d7f2;
+  width: 10%;
+  height: 10%;
+  line-height: 37px;
+  border-radius: 10%;
+  transition: all 0.2s;
+}
+.input-button_cs:hover {
+  color: black;
+  background-color: #bdeafc;
+}
