@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Zilla+Slab:wght@400&display=swap");
 .uname_cs {
   color: white;
   letter-spacing: 2px;
+  font-family: "Bruno Ace SC", cursive;
 }
 .email_cs {
   letter-spacing: 3px;
+  font-family: "Zilla Slab", serif;
 }
