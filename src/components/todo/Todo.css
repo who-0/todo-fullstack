@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 .input_cs {
   border: none;
   outline: none;
+  font-family: "Caveat", cursive;
   border-bottom: 1px solid black;
   background: transparent;
   transition: all 0.2s;
@@ -23,4 +25,19 @@
 .input-button_cs:hover {
   color: black;
   background-color: #bdeafc;
+}
+
+.lists_cs {
+  font-family: "Caveat", cursive;
+}
+
+.list-update_cs,
+.list-delete_cs {
+  cursor: pointer;
+}
+.list-update_cs:hover {
+  color: rgb(92, 211, 92);
+}
+.list-delete_cs:hover {
+  color: red;
 }

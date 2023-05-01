@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "./Profile.css";
 import ProfileContent from "./ProfileContent.component";
 
 const Profile = () => {
