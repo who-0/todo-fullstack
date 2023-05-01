@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap");
+.login-btn_cs {
+  color: white;
+  font-family: "Bruno Ace SC", cursive;
+  transition: all 0.2s;
+}
+.login-btn_cs:hover {
+  background-color: white;
+  color: #3af843;
+}
+
+.guess_cs {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: 5px 5px 10px black;
+  transform: translate(0);
+  transition: all 0.2s;
+}
+
+.guess_cs:hover {
+  text-shadow: 10px 10px 10px rgb(46, 46, 46);
+}

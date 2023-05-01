@@ -1,8 +1,12 @@
+import Btn from "../Button.component";
+import ErrorMsg from "../ErrorMessage.component";
+import Suggestion from "../Suggestion.component";
+
 const SignupInput = () => {
   return (
-    <div className="col-12 col-lg col-md">
-      <div className="message text-center">error</div>
-      <form className="text-center my-3 px-0 px-lg-5  ">
+    <div className="col-12 col-lg col-md d-flex justify-content-center align-items-center flex-column">
+      <ErrorMsg />
+      <form className="text-center my-3 px-0 px-lg-5  w-100 ">
         <div className="form-floating">
           <input
             type="text"
@@ -33,11 +37,12 @@ const SignupInput = () => {
           />
           <label htmlFor="floatingPassword">Password</label>
         </div>
-        <button type="submit" className="btn btn-success w-50 fs-4 l">
-          Signup
-        </button>
+        <Btn name={"Signup"} />
       </form>
-      <div className="text-muted text-center">You are not have account!</div>
+      <Suggestion
+        link={"login"}
+        sugmsg={"If You already have account. Please "}
+      />
     </div>
   );
 };

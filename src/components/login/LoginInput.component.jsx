@@ -1,11 +1,12 @@
 import Btn from "../Button.component";
 import ErrorMsg from "../ErrorMessage.component";
+import Suggestion from "../Suggestion.component";
 
 const LoginInput = () => {
   return (
-    <div className="col-12 col-lg col-md">
+    <div className="col-12 col-lg col-md d-flex justify-content-center align-items-center flex-column">
       <ErrorMsg />
-      <form className="text-center my-4 px-lg-5 px-0">
+      <form className="text-center my-4 px-lg-5 px-0 w-100">
         <div className="form-floating">
           <input
             type="email"
@@ -26,9 +27,12 @@ const LoginInput = () => {
           />
           <label htmlFor="floatingPassword">Enter Password</label>
         </div>
-        <Btn />
+        <Btn name={"Login"} />
       </form>
-      <div className="text-muted text-center">You are not have account!</div>
+      <Suggestion
+        link={"signup"}
+        sugmsg={"If you don't have account! Please "}
+      />
     </div>
   );
 };
