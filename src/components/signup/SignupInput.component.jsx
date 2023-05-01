@@ -6,7 +6,7 @@ const SignupInput = () => {
   return (
     <div className="col-12 col-lg col-md d-flex justify-content-center align-items-center flex-column">
       <ErrorMsg />
-      <form className="text-center my-3 px-0 px-lg-5  w-100 ">
+      <form className="text-center my-1 my-lg-3 px-0 px-lg-5  w-100 ">
         <div className="form-floating">
           <input
             type="text"
