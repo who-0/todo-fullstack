@@ -7,9 +7,10 @@ import Profile from "../components/profile/Profile.component";
 import Signup from "../components/signup/Signup.component";
 import Home from "./Home.container";
 import Login from "../components/login/Login.component";
+import { useState } from "react";
 
 function App() {
-  const user = true;
+  const [user, setUser] = useState(false);
   return (
     <BrowserRouter>
       <Routes>
@@ -29,7 +30,7 @@ function App() {
             </Protected>
           }
         />
-        <Route path="login" element={<Login />} />
+        <Route path="login" element={<Login setUser={setUser} />} />
         <Route path="signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
