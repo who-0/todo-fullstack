@@ -1,14 +1,18 @@
-import { useState, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { submitLogin } from "./request";
 const useLogin = (data) => {
   const [loading, setLoading] = useState(true);
   const [apiData, setApiData] = useState([]);
-  useCallback(async () => {
+  const fetchData = async (data) => {
     const res = await submitLogin(data);
     console.log("res", res);
     setLoading(false);
     setApiData(res);
+  };
+  useEffect(() => {
+    fetchData(data);
   }, [data]);
+
   return { loading, apiData };
 };
 

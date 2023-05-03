@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import LoginImage from "./LoginImage.component";
 import LoginInput from "./LoginInput.component";
 import useLogin from "../../Hooks/useLogin";
@@ -6,6 +6,7 @@ import useLogin from "../../Hooks/useLogin";
 const Login = ({ setUser }) => {
   const [login, setLogin] = useState({});
   const { loading, loginCallback } = useLogin(login);
+  console.log("login", login);
   console.log("loading", loading);
   console.log(loginCallback);
   return (
