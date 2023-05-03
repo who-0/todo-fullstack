@@ -1,20 +1,23 @@
-import { useState } from "react";
-
+import { useContext } from "react";
+import Context from "../../Hooks/Context";
 import Btn from "../Button.component";
 import ErrorMsg from "../ErrorMessage.component";
 import Suggestion from "../Suggestion.component";
+import useLogin from "../../Hooks/useLogin";
 
-const LoginInput = ({ setLogin }) => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const loginHandler = (e) => {
+const LoginInput = () => {
+  const { setUser, email, setEmail, password, setPassword, loading } =
+    useContext(Context);
+  const { data } = useLogin();
+  console.log("data", data);
+  const loginHandler = async (e) => {
     e.preventDefault();
     const newLogin = { email, password };
-    // console.log(newLogin);
-    setLogin(newLogin);
+    console.log("newLogin", newLogin);
+    setUser(true);
     setEmail("");
     setPassword("");
+    console.log(loading);
   };
   return (
     <div className="col-12 col-lg col-md d-flex justify-content-center align-items-center flex-column">
