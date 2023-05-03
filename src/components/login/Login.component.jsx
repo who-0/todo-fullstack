@@ -1,12 +1,18 @@
+import { useState, useEffect } from "react";
 import LoginImage from "./LoginImage.component";
 import LoginInput from "./LoginInput.component";
+import useLogin from "../../Hooks/useLogin";
 
 const Login = ({ setUser }) => {
+  const [login, setLogin] = useState({});
+  const { loading, loginCallback } = useLogin(login);
+  console.log("loading", loading);
+  console.log(loginCallback);
   return (
     <div className="container bg-primary vh-100">
       <div className="row justify-content-center align-items-center h-100">
         <LoginImage />
-        <LoginInput setUser={setUser} />
+        <LoginInput setLogin={setLogin} />
       </div>
     </div>
   );

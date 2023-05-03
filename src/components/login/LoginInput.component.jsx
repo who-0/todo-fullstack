@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Navigate } from "react-router-dom";
+
 import Btn from "../Button.component";
 import ErrorMsg from "../ErrorMessage.component";
 import Suggestion from "../Suggestion.component";
 
-const LoginInput = ({ setUser }) => {
+const LoginInput = ({ setLogin }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [login, setLogin] = useState({});
+
   const loginHandler = (e) => {
     e.preventDefault();
     const newLogin = { email, password };
@@ -15,8 +15,6 @@ const LoginInput = ({ setUser }) => {
     setLogin(newLogin);
     setEmail("");
     setPassword("");
-    setUser(true);
-    <Navigate to="/" />;
   };
   return (
     <div className="col-12 col-lg col-md d-flex justify-content-center align-items-center flex-column">
